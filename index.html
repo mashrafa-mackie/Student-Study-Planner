@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Student Study Planner</title>
+    
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+<nav>
+<div class="logo">📚 Study Planner</div>
+<button id="themeToggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+<div class="nav-links">
+
+    <a href="index.html">Dashboard</a>
+    <a href="tasks.html">Task</a>
+    <a href="progress.html">Progress</a>
+    <a href="calender.html">Calender</a>
+</div>
+</nav>
+
+<section class="Welcome">
+    <h1>Good Morning! 👋</h1>
+    <p>Let's make today productive </p>
+</section>
+
+<section class="dashboard-cards">
+    <div class="card">
+        <div class="card-icon">📚</div>
+        <h3>Subjects</h3>
+        <p id="dashboardSubjects">4</p>
+    </div>
+
+    <div class="card">
+        <div class="card-icon">📝</div>
+        <h3>Tasks</h3>
+        <p id="dashboardTasks">12</p>
+    </div>
+
+    <div class="card">
+        <div class="card-icon">📈</div>
+        <h3>Progress</h3>
+        <p id="dashboardProgress">65%</p>
+    </div>
+</section>
+
+<section class="subjects">
+
+    <h2>My Subjects</h2>
+
+    <div class="subject-cards">
+
+        <div class="subject-card">
+            <h3>💻 Computer Network</h3>
+            <p id="networkTasks">0 Tasks</p>
+        </div>
+
+        <div class="subject-card">
+            <h3> ☕ Java</h3>
+            <p id="javaTasks">0 Tasks</p>
+        </div>
+
+        <div class="subject-card">
+            <h3>📊 Economics</h3>
+            <p id="economicsTasks">0 Tasks</p>
+        </div>
+
+        <div class="subject-card">
+            <h3>🖌 UI Design</h3>
+            <p id="uiTasks">0 Tasks</p>
+        </div>
+
+        </div>
+</section>
+
+<script src="Script1.js"></script>
+
+</body>
+</html>

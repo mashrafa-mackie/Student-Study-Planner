@@ -1,0 +1,49 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar - Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">📚 Study Planner</div>
+
+        <div class="nav-links">
+            <a href="index.html">Dashboard</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="calendar.html" class="active">Calendar</a>
+            <a href="progress.html">Progress</a>
+        </div>
+    </nav>
+
+    <main class="calendar-container">
+
+        <h1>📅 Study Calendar</h1>
+        <p>Plan your study tasks and never miss a deadline!</p>
+
+        <div class="calendar-header">
+            <button id="prevMonth">❮</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth">❯</button>
+        </div>
+
+        <div class="calendar-grid" id="calendarGrid"></div>
+
+        <div class="selected-date-tasks">
+            <h2>Tasks for Selected Date</h2>
+            <div id="calendarTasks">
+                Select a date to view your tasks.
+            </div>
+        </div>
+
+    </main>
+
+    <script src="Script1.js"></script>
+
+</body>
+</html>
+

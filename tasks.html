@@ -1,0 +1,116 @@
+﻿
+
+
+    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks - Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">📚 Study Planner</div>
+
+        <div class="nav-links">
+            <a href="index.html">Dashboard</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="progress.html">Progress</a>
+            <a href="calender.html">Calender</a>
+        </div>
+
+    </nav>
+
+    <section class="tasks-section">
+
+        <h1>My Tasks</h1>
+        <p>Keep track of your study tasks</p>
+
+        <div class="add-task">
+
+            <h2>Add New Task</h2>
+
+            <input type="text" id="taskName" placeholder="Enter task name">
+
+            <select id="taskSubject">
+                <option value="">Select Subject</option>
+                <option>Computer Network</option>
+                <option>Java</option>
+                <option>Economics</option>
+                <option>UI Design</option>
+            </select>
+
+            <input type="date" id="taskDate">
+
+            <button onclick="addTask()">+ Add Task</button>
+
+        </div>
+
+        <div class="task-search">
+            <input type="text"
+                   id="searchTask"
+                   placeholder="🔍 Search your tasks..."
+                   onkeyup="searchTasks()">
+        </div>
+
+        <div class="task-filter">
+
+            <button onclick="filterTasks('All')">All</button>
+            <button onclick="filterTasks('Computer Network')">Computer Network</button>
+            <button onclick="filterTasks('Java')">Java</button>
+            <button onclick="filterTasks('Economics')">Economics</button>
+            <button onclick="filterTasks('UI Design')">UI Design</button>
+
+        </div>
+
+        <div class="task-list">
+
+            <div class="task-card">
+                <h3>💻 Computer Network</h3>
+                <p>Complete OSI Model notes</p>
+                <span>Due: Tomorrow</span>
+                <button class="status-btn" onclick="changeStatus(this)">Pending</button>
+                <button class="delete-btn" onclick="deleteTask(this)">🗑️ Delete</button>
+                <button class="edit-btn" onclick="editTask(this)">✏️ Edit</button>
+            </div>
+
+            <div class="task-card">
+                <h3>☕ Java</h3>
+                <p>Practice loops and arrays</p>
+                <span>Due: Friday</span>
+                <button class="status-btn" onclick="changeStatus(this)">Pending</button>
+                <button class="delete-btn" onclick="deleteTask(this)">🗑️ Delete</button>
+                <button class="edit-btn" onclick="editTask(this)">✏️ Edit</button>
+            </div>
+
+            <div class="task-card">
+                <h3>📊 Economics</h3>
+                <p>Study elasticity</p>
+                <span>Due: Saturday</span>
+                <button class="status-btn completed" onclick="changeStatus(this)">Completed</button>
+                <button class="delete-btn" onclick="deleteTask(this)">🗑️ Delete</button>
+                <button class="edit-btn" onclick="editTask(this)">✏️ Edit</button>
+            </div>
+
+            <div class="task-card">
+                <h3>🖌 UI Design</h3>
+                <p>Complete Figma dashboard</p>
+                <span>Due: Sunday</span>
+                <button class="status-btn" onclick="changeStatus(this)">Pending</button>
+                <button class="delete-btn" onclick="deleteTask(this)">🗑️ Delete</button>
+                <button class="edit-btn" onclick="editTask(this)">✏️ Edit</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="Script1.js"></script>
+
+</body>
+</html>
